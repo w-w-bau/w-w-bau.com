@@ -222,6 +222,8 @@ section.eng{padding:72px 0}
 .duo > .partner{align-content:center}
 .duo > .bild-rahmen{aspect-ratio:auto;min-height:440px}
 .duo > ol{align-self:center}
+.duo > .bild-ganz{min-height:0;align-self:center}
+.bild-ganz img{object-fit:contain}
 .bild-rahmen{border-radius:var(--radius);overflow:hidden;position:relative;aspect-ratio:4/3;background:#ddd6c8}
 .bild-rahmen img,.bild-rahmen video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .liste{display:flex;flex-direction:column;gap:12px;margin:22px 0 30px}
@@ -418,6 +420,7 @@ section.eng{padding:72px 0}
 .karte-w p{margin:0;font-size:15px;color:var(--grau)}
 .team-raster{display:grid;grid-template-columns:1fr 1.5fr;gap:64px;align-items:start}
 .team{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.team:has(.person:nth-child(4)){grid-template-columns:repeat(2,1fr)}
 .person{display:flex;flex-direction:column;gap:4px;background:#fff;border:1px solid var(--linie);border-radius:var(--radius);padding:22px}
 .monogramm{display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:var(--teer);color:#fff;font-family:var(--schrift-h);font-size:24px;letter-spacing:.04em;margin-bottom:14px}
 .person p{margin:8px 0 0;font-size:14.5px;color:var(--grau)}
@@ -540,7 +543,7 @@ body.intro-laeuft .hero .hw span,body.intro-laeuft .hero .lead,body.intro-laeuft
   .bahn.auf .b-kopf b{padding-bottom:0;margin-top:0}
   .bahn.auf .b-text{bottom:22px}
   .weiter{grid-template-columns:1fr}
-  .team{grid-template-columns:repeat(3,1fr)}
+  .team,.team:has(.person:nth-child(4)){grid-template-columns:repeat(2,1fr)}
   .schnurkarte{display:none}
   .karte-buehne{border:0;background:transparent}
   .orte-lage{position:static;display:flex;flex-wrap:wrap;gap:8px}
@@ -569,7 +572,7 @@ body.intro-laeuft .hero .hw span,body.intro-laeuft .hero .lead,body.intro-laeuft
   .masskette ul{grid-template-columns:1fr 1fr;gap:20px}
   .reihe{flex-wrap:wrap}
   .reihe figure,.reihe.kurz figure{flex:none;width:100%;aspect-ratio:4/3}
-  .werte,.team,.partner{grid-template-columns:1fr}
+  .werte,.team,.team:has(.person:nth-child(4)),.partner{grid-template-columns:1fr}
   .fuss-gitter{grid-template-columns:1fr;gap:28px}
   .abschnitte li{grid-template-columns:34px 1fr;gap:8px 14px}
   .abschnitte > li > svg{grid-column:2;grid-row:1}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://w-w-bau.com/sitemap.xml
